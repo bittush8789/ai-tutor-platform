@@ -1,0 +1,17 @@
+streamlit
+langchain
+langchain-groq
+langchain-community
+chromadb
+pandas
+plotly
+groq
+pydantic
+faker
+python-dotenv
+pypdf
+docx2txt
+tiktoken
+sentence-transformers
+langchain-core
+langchain-text-splitters
