@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.tox/
+
+# Data and Persistence (Should be mounted via PVC)
+data/*
+chroma_db/*
+!data/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml

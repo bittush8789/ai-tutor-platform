@@ -1,8 +1,9 @@
 import sqlite3
+import os
 import pandas as pd
 from datetime import datetime
 
-DB_PATH = "data/tutor_app.db"
+DB_PATH = os.getenv("SQLITE_DB_PATH", "data/tutor_app.db")
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

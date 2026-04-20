@@ -16,7 +16,7 @@ class RAGAgent:
             groq_api_key=os.getenv("GROQ_API_KEY")
         )
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        self.persist_directory = "chroma_db"
+        self.persist_directory = os.getenv("CHROMA_DB_PATH", "chroma_db")
 
     def process_file(self, file_path):
         if file_path.endswith('.pdf'):
